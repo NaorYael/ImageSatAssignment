@@ -1,0 +1,70 @@
+.split {
+  .container {
+    height: 100vh;
+    overflow: auto;
+
+    table {
+      width: 90%;
+      margin: 10px;
+
+      ::ng-deep .mat-checkbox-checked .mat-checkbox-background,
+      ::ng-deep .mat-checkbox-indeterminate .mat-checkbox-background {
+        background-color: #437891 !important;
+      }
+    }
+
+    .selected {
+      background-color: #e4f0ec !important;
+    }
+
+    .mat-row .mat-cell {
+      border-bottom: 1px solid transparent;
+      border-top: 1px solid transparent;
+      cursor: pointer;
+    }
+
+    .mat-row:hover .mat-cell {
+      border-color: currentColor;
+    }
+
+    .demo-row-is-clicked {
+      font-weight: bold;
+    }
+  }
+
+  .card {
+    top: 30px;
+    width: 100%;
+    margin: 15px;
+
+    mat-card-title {
+      font-size: xx-large;
+    }
+  }
+
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 80px;
+  bottom: 30px;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
